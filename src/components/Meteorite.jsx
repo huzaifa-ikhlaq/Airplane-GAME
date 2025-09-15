@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import MeteoriteImg from "../assets/meteorite.png";
+import MeteoriteImg from "../assets/Meteorite.png";
 
 export default function Meteorite() {
     const [active, setActive] = useState([false, false, false, false, false]);
