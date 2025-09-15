@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+/* Meteorite animations */
+.Meteoriete-1 {
+    animation: Meteoriete-1 6s 1s linear infinite;
+}
+
+.Meteoriete-2 {
+    animation: Meteoriete-2 6s 2s linear infinite;
+}
+
+.Meteoriete-3 {
+    animation: Meteoriete-3 6s 1.5s linear infinite;
+}
+
+.Meteoriete-4 {
+    animation: Meteoriete-4 6s 0s linear infinite;
+}
+
+.Meteoriete-5 {
+    animation: Meteoriete-5 6s 3s linear infinite;
+}
+
+/* Keyframes */
+@keyframes Meteoriete-1 {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(120dvh);
+    }
+}
+
+@keyframes Meteoriete-2 {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(120dvh);
+    }
+}
+
+@keyframes Meteoriete-3 {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(120dvh);
+    }
+}
+
+@keyframes Meteoriete-4 {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(120dvh);
+    }
+}
+
+@keyframes Meteoriete-5 {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(120dvh);
+    }
+}
+
+.Meteoriete-anim {
+    animation: fall 3s linear;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(120dvh);
+    }
+}
