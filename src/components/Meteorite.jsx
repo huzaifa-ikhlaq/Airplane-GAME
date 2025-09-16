@@ -1,5 +1,5 @@
 import { useRef, useEffect, useState } from "react";
-import MeteoriteImg from "../assets/meteorite.png";
+import MeteoriteImg from "../assets/Meteorite.png";
 
 export default function Meteorite({ airplaneRef, setScore, score }) {
     const meteoriteRef1 = useRef(null);
