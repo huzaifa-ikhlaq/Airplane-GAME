@@ -87,10 +87,11 @@ export default function Meteorite({ airplaneRef, setScore, score }) {
                     <span className="text-4xl font-bold text-red-600 mb-6">
                         GAME OVER 💀
                     </span>
-                    <div className="bg-neutral-600 text-white rounded-xl px-6 py-4">
+                    <div className="bg-neutral-600 text-white rounded-xl px-6 py-4 flex flex-col gap-5">
                         You scored: {score}
+                        <button className='bg-green-600 p-2 rounded-xl cursor-pointer text-amber-50' onClick={() => setGameOver(false)}>Play Again</button>
+
                     </div>
-                    <button onClick={() => setGameOver(false)}>Play Again</button>
                 </div>
             )}
 
