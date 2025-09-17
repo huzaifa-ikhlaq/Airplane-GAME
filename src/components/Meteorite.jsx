@@ -9,6 +9,13 @@ export default function Meteorite({ airplaneRef, setScore, score }) {
     const meteoriteRef5 = useRef(null);
 
     const [gameOver, setGameOver] = useState(false);
+    const [resultScore, setResultScore] = useState(0);
+
+    useEffect(() => {
+        if (gameOver) {
+            setResultScore(score);
+        }
+    }, [gameOver]);
 
     useEffect(() => {
         function startMeteoriteAnimation(el, className, duration, restartDelay) {
@@ -88,13 +95,13 @@ export default function Meteorite({ airplaneRef, setScore, score }) {
                         GAME OVER 💀
                     </span>
                     <div className="bg-neutral-600 text-white rounded-xl px-6 py-4 flex flex-col gap-5">
-                        You scored: {score}
-                        <button className='bg-green-600 p-2 rounded-xl cursor-pointer text-amber-50' onClick={() => setGameOver(false)}>Play Again</button>
-
+                        You scored: {resultScore}
+                        <button className='bg-green-600 p-2 rounded-xl cursor-pointer text-amber-50' onClick={() => { setGameOver(false); setScore(0) }}>Play Again</button>
                     </div>
                 </div>
-            )}
+            )
+            }
 
-        </div>
+        </div >
     );
 }
